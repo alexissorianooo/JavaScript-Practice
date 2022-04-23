@@ -36,15 +36,36 @@ If it is not possible to obtain I then output IMPOSSIBLE as y.
 function speed(I,P){
     // get the length of I
     let goal = I.split('')
-    let write = P.split('')
+    let write = P.split('').filter((letter,index)=> {
+        letter != goal[index]
+    })
 
-    for (let i = 0; i < goal.length; i++){
-        for( let j = 0; j < write.legth; i++){
-            if(write[j] === goal[i]){
+    // for (let i = 0; i < goal.length; i++){
+    //     for( let j = 0; j < write.legth; i++){
+    //         if(write[j] === goal[i]){
                 
+    //         }
+    //     }
+    // }
+
+    console.log(`goal is: ${goal}, write is: ${write}`);
+    console.log(typeof write);
+
+    let ans='';
+    for (let i = 0; i < I.length; i++) {
+        for (let j = 0; j < write.length; j++) {
+            if(write[j]!=I[i]){
+                ans='IMPOSSIBLE'
+                console.log(write[i],I[i]);
+            }else{
+                ans=write.length
             }
         }
+        
     }
+    console.log(ans);
+
+
 }
 
-console.log(speed("aaaa","aaaaa"));
+console.log(speed("ABbb","aaAB"));
