@@ -30,9 +30,6 @@ If it is not possible to obtain I then output IMPOSSIBLE as y.
 
 
 */
-
-
-
 function speed(I,P){
     // get the length of I
     let goal = I.split('')
@@ -47,7 +44,6 @@ function speed(I,P){
     //         }
     //     }
     // }
-
     console.log(`goal is: ${goal}, write is: ${write}`);
     console.log(typeof write);
 
@@ -64,8 +60,6 @@ function speed(I,P){
         
     }
     console.log(ans);
-
-
 }
 
 console.log(speed("ABbb","aaAB"));
