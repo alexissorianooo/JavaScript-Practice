@@ -36,11 +36,9 @@ function speed(I,P){
     let write = P.split('').filter((letter,index)=> {
         letter != goal[index]
     })
-
     // for (let i = 0; i < goal.length; i++){
     //     for( let j = 0; j < write.legth; i++){
     //         if(write[j] === goal[i]){
-                
     //         }
     //     }
     // }
