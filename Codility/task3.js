@@ -43,8 +43,8 @@ function solution(H, X, Y) {
 }
 
 // const ans = solution([5, 5, 4, 6], 8, 8)
-// const ans = solution([6, 5, 5, 4, 3], 8, 9)
-const ans = solution([6, 5, 2, 1, 8], 17, 5)
+const ans = solution([6, 5, 5, 4, 3], 8, 9)
+// const ans = solution([6, 5, 2, 1, 8], 17, 5)
 
 
-// console.log(ans)
+console.log(ans)
